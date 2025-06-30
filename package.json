@@ -1,0 +1,44 @@
+{
+	"name": "@vdegenne/rollup",
+	"version": "0.1.0",
+	"type": "module",
+	"bin": {
+		"rollup": "./node_modules/rollup/dist/bin/rollup"
+	},
+	"exports": {
+		".": {
+			"import": "./lib/index.js",
+			"types": "./lib/index.d.ts"
+		}
+	},
+	"types": "",
+	"scripts": {
+		"build": "wireit"
+	},
+	"files": [],
+	"devDependencies": {
+		"typescript": "^5.8.3",
+		"wireit": "^0.14.12"
+	},
+	"wireit": {
+		"build": {
+			"command": "tsc --pretty",
+			"clean": "if-file-deleted",
+			"files": [
+				"./tsconfig.json",
+				"./src"
+			],
+			"output": [
+				"./lib"
+			]
+		}
+	},
+	"dependencies": {
+		"@rollup/plugin-commonjs": "^28.0.6",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^12.1.4",
+		"rollup": "^4.44.1",
+		"tslib": "^2.8.1"
+	}
+}
