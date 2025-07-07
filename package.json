@@ -1,9 +1,9 @@
 {
 	"name": "@vdegenne/rollup",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"bin": {
-		"rollup": "./node_modules/rollup/dist/bin/rollup"
+		"rollup": "./node_modules/.bin/rollup"
 	},
 	"exports": {
 		".": {
@@ -11,7 +11,6 @@
 			"types": "./lib/index.d.ts"
 		}
 	},
-	"types": "",
 	"scripts": {
 		"build": "wireit"
 	},
