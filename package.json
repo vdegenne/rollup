@@ -1,9 +1,9 @@
 {
 	"name": "@vdegenne/rollup",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"type": "module",
 	"bin": {
-		"rollup": "../rollup/dist/bin/rollup"
+		"rollup": "../../rollup/dist/bin/rollup"
 	},
 	"exports": {
 		".": {
