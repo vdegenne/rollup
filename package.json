@@ -1,6 +1,6 @@
 {
 	"name": "@vdegenne/rollup",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"type": "module",
 	"exports": {
 		".": {
@@ -15,9 +15,9 @@
 		"./lib"
 	],
 	"devDependencies": {
-		"typescript": "^5.8.3",
+		"typescript": "^5.9.2",
 		"wireit": "^0.14.12",
-		"rollup": "^4.44.1"
+		"rollup": "^4.46.4"
 	},
 	"wireit": {
 		"build": {
