@@ -1,6 +1,6 @@
 {
 	"name": "@vdegenne/rollup",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"type": "module",
 	"exports": {
 		".": {
@@ -16,8 +16,7 @@
 	],
 	"devDependencies": {
 		"typescript": "^5.9.2",
-		"wireit": "^0.14.12",
-		"rollup": "^4.46.4"
+		"wireit": "^0.14.12"
 	},
 	"wireit": {
 		"build": {
@@ -33,13 +32,11 @@
 		}
 	},
 	"dependencies": {
+		"rollup": "^4.49.0",
 		"@rollup/plugin-commonjs": "^28.0.6",
 		"@rollup/plugin-node-resolve": "^16.0.1",
 		"@rollup/plugin-terser": "^0.4.4",
 		"@rollup/plugin-typescript": "^12.1.4",
 		"tslib": "^2.8.1"
-	},
-	"peerDependencies": {
-		"rollup": "^4.0.0"
 	}
 }
